@@ -42,31 +42,31 @@
 
 
 ###Criar módulos
-    geosan modulo [nomedomodulo]
+   php index.php geosan modulo [nomedomodulo]
     
 **Exemplo:**
 
-    geosan modulo usuarios 
+    php index.php geosan modulo usuarios 
     
   *(Cria o módulo usuarios e as pastas controllers, views e models)*
 
 ###Criar controllers
-    geosan controller [nomedomodulo] [nomedocontroller]
+    php index.php geosan controller [nomedomodulo] [nomedocontroller]
     
   **Exemplo:**
   
-    geosan modulo usuarios admin 
+    php index.php geosan modulo usuarios admin 
   *(Cria o controller admin no módulo usuarios)*
   
 ###Criar Models
-    geosan controller [nomedomodulo] [nomedomodel] [tabela*] [chaveprimaria*]
+    php index.php geosan controller [nomedomodulo] [nomedomodel] [tabela*] [chaveprimaria*]
     
   **Exemplo:**
  
-    geosan model usuarios admin usuarios idUsuario 
+    php index.php geosan model usuarios admin usuarios idUsuario 
   *(Cria o model admin no módulo usuarios e seta uma variável com o nome da tabela usuarios e seta uma variável como idUsuario)*
   
   **Exemplo2:**
  
-    geosan model usuarios admin 
+    php index.php geosan model usuarios admin 
   *(Cria o model admin no módulo usuarios)*
