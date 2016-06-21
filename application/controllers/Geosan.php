@@ -142,7 +142,7 @@ class Geosan extends CI_Controller
             }
 
             if (!write_file($dirModel . ucfirst($name) . '_model.php',
-                $this->createModel(ucfirst($name), $name, "id".ucfirst($name), $extendsName)))
+                $this->createModel(ucfirst($name), $name, "id".ucfirst($name), 'CI_Model')))
             {
                 echo "Não foi possível criar o model.\n";
                 return false;
