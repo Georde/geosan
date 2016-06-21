@@ -6,12 +6,13 @@
  - controller -	Diretiva para criar controllers
  - model - Diretiva para criar models 
 
-# Instalar:  
+# Baixar:  
 
-    Abra o terminal e execute ‘git clone https://github.com/Georde/Codeigniter-HMVC-Geosan.git’ ou faça o download.
-
+*Abra o terminal e execute:*     
+    
+    composer create-project georde/codeigniter-geosan geosan --prefer-dist
   
-  *Já está no ponto de usar, com o Codeigniter configurado no padrão HMVC.*
+  *Foi criado um projeto e já está no ponto de usar, com o Codeigniter configurado no padrão HMVC.*
   
 # Como usar:
 
