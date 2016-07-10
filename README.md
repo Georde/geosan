@@ -60,7 +60,7 @@
   *(Cria o controller admin no módulo usuarios)*
   
 ###Criar Models
-    php index.php geosan controller [nomedomodulo] [nomedomodel] [tabela*] [chaveprimaria*]
+    php index.php geosan model [nomedomodulo] [nomedomodel] [tabela*] [chaveprimaria*]
     
   **Exemplo:**
  
