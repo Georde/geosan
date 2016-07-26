@@ -1,5 +1,5 @@
 # Codeigniter-HMVC-Geosan
-#### Codeigniter 3.0.6 em HMVC.
+#### Codeigniter 3.1.0 em HMVC.
 #### Geosan é uma ferramenta que auxilia na criação da base de modulos de forma automática.
 
  - modulo - Diretiva para criar modulos
