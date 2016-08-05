@@ -1,11 +1,11 @@
 {
 	"description": "Geosan",
-	"name": "georde/codeigniter-geosan",
+	"name": "georde/geosan",
 	"type": "project",
-	"homepage": "https://github.com/Georde/codeigniter-geosan",
+	"homepage": "https://github.com/georde/geosan",
 	"license": "MIT",
 	"support": {
-		"source": "https://github.com/Georde/codeigniter-geosan"
+		"source": "https://github.com/georde/geosan"
 	},
 	"require": {
 		"php": ">=5.2.4"
