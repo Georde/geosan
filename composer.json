@@ -1,16 +1,16 @@
 {
-	"description": "Geosan",
-	"name": "georde/geosan",
-	"type": "project",
-	"homepage": "https://github.com/georde/geosan",
-	"license": "MIT",
-	"support": {
-		"source": "https://github.com/georde/geosan"
-	},
-	"require": {
-		"php": ">=5.2.4"
-	},
-	"require-dev": {
-		"mikey179/vfsStream": "1.1.*"
-	}
+  "description": "Geosan",
+  "name": "georde/geosan",
+  "type": "project",
+  "homepage": "https://github.com/georde/geosan",
+  "license": "MIT",
+  "support": {
+    "source": "https://github.com/georde/geosan"
+  },
+  "require": {
+    "php": ">=5.2.4"
+  },
+  "require-dev": {
+    "mikey179/vfsStream": "1.1.*"
+  }
 }
