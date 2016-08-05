@@ -10,7 +10,7 @@
 
 *Abra o terminal e execute:*     
     
-    composer create-project georde/codeigniter-geosan geosan --prefer-dist
+    composer create-project georde/geosan geosan --prefer-dist
   
   *Foi criado um projeto e já está no ponto de usar, com o Codeigniter configurado no padrão HMVC.*
   
