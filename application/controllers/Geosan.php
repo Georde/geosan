@@ -76,8 +76,8 @@ class Geosan extends CI_Controller
         $data .= "	}\n";
         $data .= "\n    public function index()\n";
         $data .= "	{\n";
-        $data .= '	    echo \'' . $name . "';\n";
-        $data .= "	}\n";
+        $data .= "	    $"."t"."h"."i"."s->load->view('index');";
+        $data .= "\n	}\n";
         $data .= "}";
         return $data;
     }
@@ -114,6 +114,7 @@ class Geosan extends CI_Controller
         $dirController = APPPATH . "modules/" . strtolower($name) . "/controllers/";
         $dirModel = APPPATH . "modules/" . strtolower($name) . "/models/";
         $dirViews = APPPATH . "modules/" . strtolower($name) . "/views/";
+        $dirJs = APPPATH . "modules/" . strtolower($name) . "/js/";
 
         if (!file_exists($dir))
         {
@@ -132,6 +133,14 @@ class Geosan extends CI_Controller
             if (!is_dir($dirViews))
             {
                 mkdir($dirViews);
+                touch($dirViews . 'index.php');
+                $index = fopen($dirViews . "index.php", "a");
+                $escreve = fwrite($index, "<!DOCTYPE html>\n<html lang='pt_BR'>\n<head>\n\t<meta charset='UTF-8'>\n\t<title>Index</title>\n</head>\n\n<body>\n\t<h1 align='center'>Index</h1>\n</body>\n</html>");
+                fclose($index);
+            }   
+            if (!is_dir($dirJs))
+            {
+                mkdir($dirJs);
             }
 
             if (!write_file($dirController . ucfirst($name) . '.php',
