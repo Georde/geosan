@@ -76,8 +76,8 @@ class Geosan extends CI_Controller
         $data .= "	}\n";
         $data .= "\n    public function index()\n";
         $data .= "	{\n";
-        $data .= "	    $"."t"."h"."i"."s->load->view('index');\n";
-        $data .= "	}\n";
+        $data .= "	    $"."t"."h"."i"."s->load->view('index');";
+        $data .= "\n	}\n";
         $data .= "}";
         return $data;
     }
