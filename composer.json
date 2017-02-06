@@ -1,0 +1,22 @@
+{
+    "name": "georde/geosan",
+    "description": "Tools CLI your CodeIgniter",
+    "type": "project",
+    "require": {
+        "php": ">=5.6.4",
+        "symfony/console": "^3.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Georde Henrique",
+            "email": "georde.henrique@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "Geosan\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
