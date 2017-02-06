@@ -26,7 +26,7 @@ class Geosan extends CI_Controller
     public function _remap($method, $params = array())
     {
         switch ($method) {
-            case 'modulo':
+            case 'module':
                 $this->modulo(
                     isset($params[0]) ? $params[0] : Null,
                     isset($params[1]) ? $params[1] : 'MX_Controller'
@@ -49,6 +49,15 @@ class Geosan extends CI_Controller
                     isset($params[4]) ? $params[4] : 'CI_Model'
                 );
                 break;
+            case 'migrate':
+                $this->model(
+                    isset($params[0]) ? $params[0] : Null,
+                    isset($params[1]) ? $params[1] : Null,
+                    isset($params[2]) ? $params[2] : Null,
+                    isset($params[3]) ? $params[3] : Null,
+                    isset($params[4]) ? $params[4] : 'migrations'
+                );
+                break;
 
             default:
                 $this->index();
@@ -60,9 +69,10 @@ class Geosan extends CI_Controller
     public function index()
     {
         echo "\n\033[32mUso:\n\033[0m";
-        echo " modulo	        Criar modulo\n";
+        echo " module	        Criar modulo\n";
         echo " controller	Criar controller\n";
         echo " model		Criar model\n";
+        echo " migrate		Criar model\n";
         return true;
     }
 
