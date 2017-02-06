@@ -1,73 +1,64 @@
-# Codeigniter-HMVC-Geosan
-#### Codeigniter 3.1.2 em HMVC.
-#### Geosan é uma ferramenta que auxilia na criação da base de modulos de forma automática.
 
- - modulo - Diretiva para criar modulos
- - controller -	Diretiva para criar controllers
- - model - Diretiva para criar models 
+# Geosan
 
-# Baixar:  
+### Geosan é uma ferramenta que facilita na criação de models, controllers, views, migrations e helpers no CodeIgniter MVC ou HMVC.
 
-*Abra o terminal e execute:*     
+ - create:controller -	Diretiva para criar controllers
+ - create:model - Diretiva para criar models 
+ - create:view - Diretiva para criar views 
+ - create:helper - Diretiva para criar helpers 
+ - create:migration - Diretiva para criar migrations 
+
+## Instalação:
+
+*Dentro da pata do projeto abra o terminal e execute:*     
     
-    composer create-project georde/geosan geosan --prefer-dist
-  
-  *Foi criado um projeto e já está no ponto de usar, com o Codeigniter configurado no padrão HMVC.*
-  
+    composer require georde/geosan
+*Finalizada a instalçao, execute*
+    
+
 # Como usar:
+=======
+    cp vendor/georde/geosan/geosan geosan
+        
+##Como usar:
 
-*Para usar o Geosan, digite no terminal:*
+####Criando Controllers
+*Controller na pasta padrao*
 
-    php index.php geosan
+    php geosan create:controller [nome]
 
-*Se preferir, você pode criar um comando para agilizar a criação dos módulos (Recomendado)*
+*Controller em um módulo*
 
-    vim ~/.bash_profile
-  *Depois aperte ESC*
-  
-*Adicione no final do arquivo:*
-
-    alias geosan="php index.php geosan"
-
-*Salve e feche o editor vim:*
-
-    :wq!
-  
-*Depois digite:*
-
-    source ~/.bash_profile
-
-**Pronto!**
-
-  *Agora você pode usar o comando geosan para criar seus módulos no Codeigniter.*
-
-
-###Criar módulos
-   php index.php geosan modulo [nomedomodulo]
+    php geosan create:controller [nome] [modulo]
     
-**Exemplo:**
 
-    php index.php geosan modulo usuarios 
-    
-  *(Cria o módulo usuarios e as pastas controllers, views e models)*
+####Criando Models
+*Model na pasta padrao*
 
-###Criar controllers
-    php index.php geosan controller [nomedomodulo] [nomedocontroller]
+    php geosan create:model [nome]
+
+*Model em um módulo*
+
+    php geosan create:model [nome] [modulo]
     
-  **Exemplo:**
-  
-    php index.php geosan modulo usuarios admin 
-  *(Cria o controller admin no módulo usuarios)*
-  
-###Criar Models
-    php index.php geosan model [nomedomodulo] [nomedomodel] [tabela*] [chaveprimaria*]
+
+####Criando Views
+*View na pasta padrao*
+
+    php geosan create:view [nome]
+
+*View em um módulo*
+
+    php geosan create:view [nome] [modulo]
     
-  **Exemplo:**
- 
-    php index.php geosan model usuarios admin usuarios idUsuario 
-  *(Cria o model admin no módulo usuarios e seta uma variável com o nome da tabela usuarios e seta uma variável como idUsuario)*
-  
-  **Exemplo2:**
- 
-    php index.php geosan model usuarios admin 
-  *(Cria o model admin no módulo usuarios)*
+
+####Criando migrations
+
+    php geosan create:migration [nome]
+
+
+####Criando helpers
+
+    php geosan create:helper [nome]
+
