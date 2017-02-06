@@ -15,10 +15,7 @@
     
     composer require georde/geosan
 *Finalizada a instalçao, execute*
-    
 
-# Como usar:
-=======
     cp vendor/georde/geosan/geosan geosan
         
 ##Como usar:
