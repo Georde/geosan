@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Geosan - Crie módulos de forma automática no Codeigniter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Geosan</h1>
+      <h2 class="project-tagline">Crie módulos de forma automática no Codeigniter.</h2>
+      <a href="https://github.com/Georde/geosan" class="btn">View on GitHub</a>
+      <a href="https://github.com/Georde/geosan/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Georde/geosan/tarball/master" class="btn">Download .tar.gz</a>
+      <p>v1.1.6</p>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="seja-bem-vindo-ao-geosan" class="anchor" href="#seja-bem-vindo-ao-geosan" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Seja bem vindo ao Geosan!!</h1>
+
+<h4>
+<a id="geosan-é-uma-ferramenta-que-auxilia-a-criação-de-módulos-de-forma-automática-via-terminal-com-simplicidade-rapidez-e-já-vem-configurado-com-codeigniter-310-em-hmvc" class="anchor" href="#geosan-%C3%A9-uma-ferramenta-que-auxilia-a-cria%C3%A7%C3%A3o-de-m%C3%B3dulos-de-forma-autom%C3%A1tica-via-terminal-com-simplicidade-rapidez-e-j%C3%A1-vem-configurado-com-codeigniter-306-em-hmvc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Geosan é uma ferramenta que auxilia a criação de módulos de forma automática via terminal com simplicidade, rapidez e já vem configurado com Codeigniter 3.1.2 em HMVC.</h4>
+
+<h5>
+<a id="diretivas" class="anchor" href="#diretivas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Diretivas:</h5>
+
+<ul>
+<li>modulo - Diretiva para criar módulos</li>
+<li>controller - Diretiva para criar controllers</li>
+<li>model - Diretiva para criar models </li>
+</ul>
+
+<h2>
+<a id="baixar" class="anchor" href="#baixar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Baixar:</h2>
+
+<p><em>Abra o terminal e execute:</em>     </p>
+
+<pre><code>composer create-project georde/geosan [projeto] --prefer-dist
+</code></pre>
+
+<p><em>Cria o projeto e já está no ponto de usar.</em></p>
+
+<h2>
+<a id="como-usar" class="anchor" href="#como-usar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Como usar:</h2>
+
+<p><em>Dentro da pasta do projeto criado, digite no terminal:</em></p>
+
+<pre><code>php index.php geosan
+</code></pre>
+
+<p><em>Se preferir, você pode criar um comando para agilizar a criação dos módulos (Recomendado)</em></p>
+
+<pre><code>vim ~/.bash_profile
+</code></pre>
+
+<p><em>Depois aperte ESC</em></p>
+
+<p><em>Adicione no final do arquivo:</em></p>
+
+<pre><code>alias geosan="php index.php geosan"
+</code></pre>
+
+<p><em>Salve e feche o editor vim:</em></p>
+
+<pre><code>:wq!
+</code></pre>
+
+<p><em>Depois digite:</em></p>
+
+<pre><code>source ~/.bash_profile
+</code></pre>
+
+<p><strong>Pronto!</strong></p>
+
+<p>Agora você pode usar o comando <strong>geosan</strong> para criar seus módulos no Codeigniter.</p>
+
+<h3>
+<a id="criar-módulos" class="anchor" href="#criar-m%C3%B3dulos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Criar módulos</h3>
+
+<p>php index.php geosan modulo [nomedomodulo]</p>
+
+<p><strong>Exemplo:</strong></p>
+
+<pre><code>php index.php geosan modulo usuarios 
+</code></pre>
+
+<p><em>(Cria o módulo usuarios e as pastas controllers, views e models)</em></p>
+
+<h3>
+<a id="criar-controllers" class="anchor" href="#criar-controllers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Criar controllers</h3>
+
+<pre><code>php index.php geosan controller [nomedomodulo] [nomedocontroller]
+</code></pre>
+
+<p><strong>Exemplo:</strong></p>
+
+<pre><code>php index.php geosan modulo usuarios admin 
+</code></pre>
+
+<p><em>(Cria o controller admin no módulo usuarios)</em></p>
+
+<h3>
+<a id="criar-models" class="anchor" href="#criar-models" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Criar Models</h3>
+
+<pre><code>php index.php geosan model [nomedomodulo] [nomedomodel] [tabela*] [chaveprimaria*]
+</code></pre>
+
+<p><strong>Exemplo:</strong></p>
+
+<pre><code>php index.php geosan model usuarios admin usuarios idUsuario 
+</code></pre>
+
+<p><em>(Cria o model admin no módulo usuarios e seta uma variável com o nome da tabela usuarios e seta uma variável como idUsuario)</em></p>
+
+<p><strong>Exemplo2:</strong></p>
+
+<pre><code>php index.php geosan model usuarios admin 
+</code></pre>
+
+<p><em>(Cria o model admin no módulo usuarios)</em></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Georde/codeigniter-geosan">Geosan</a> é mantido por <a href="https://github.com/Georde">Georde</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
