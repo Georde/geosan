@@ -1,7 +1,7 @@
 
 # Geosan
 
-### Geosan é uma ferramenta que facilita na criação de models, controllers, views, migrations e helpers no CodeIgniter MVC ou HMVC.
+### Geosan é uma ferramenta que facilita a criação de models, controllers, views, migrations e helpers no CodeIgniter MVC ou HMVC.
 
  - create:controller -	Diretiva para criar controllers
  - create:model - Diretiva para criar models 
