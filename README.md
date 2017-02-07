@@ -11,7 +11,7 @@
 
 ## Instalação:
 
-*Dentro da pata do projeto abra o terminal e execute:*     
+*Dentro da pasta do projeto abra o terminal e execute:*     
     
     composer require georde/geosan
 *Finalizada a instalçao, execute*
