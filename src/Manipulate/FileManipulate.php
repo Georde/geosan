@@ -36,8 +36,13 @@ class FileManipulate
         $explodePath = explode('/', $fileName);
         $countBars = count($explodePath);
 
-        if ($countBars == 1)
+        if ($countBars == 1) {
+
+			if (!file_exists($this->prefixPath)) {
+                mkdir($this->prefixPath, 0777, true);
+            }
             return $this->renderFile();
+        }
 
         for ($i = 0; $i < $countBars; $i++) {
             if ($i == ($countBars - 1)) {
